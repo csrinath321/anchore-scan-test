@@ -38,7 +38,6 @@ jobs:
           image: "localbuild/testimage:latest"
           acs-report-enable: true
           fail-build: false
-          include-app-packages: true
 
       - name: upload Anchore scan SARIF report
         uses: github/codeql-action/upload-sarif@v1
